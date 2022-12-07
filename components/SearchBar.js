@@ -20,17 +20,16 @@ export default function SearchBar({ fetchWeatherData }) {
 
 const styles = StyleSheet.create({
     searchBar: {
-        marginTop: 35,
+        marginTop: 75,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        width: Dimensions.get('screen').width - 20,
+        width: Dimensions.get('screen').width - 20, //szerokość wyszukiwarki
         borderWidth: 1.5,
         paddingVertical: 10,
-        borderRadius: 25,
         marginHorizontal: 10,
         paddingHorizontal: 10,
-        backgroundColor: 'lightgray',
+        backgroundColor: 'white',
         borderColor: 'lightgray'
     }
 

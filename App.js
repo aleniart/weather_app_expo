@@ -13,7 +13,7 @@ export default function App() {
 
   async function fetchWeatherData(cityName) {
     setLoaded(false);
-    const API = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${API_KEY}`
+    const API = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${API_KEY}&lang=pl`
     try {
       const response = await fetch(API);
       if(response.status == 200) {
@@ -37,7 +37,7 @@ export default function App() {
   if(!loaded) {
     return (
       <View style={styles.container}>
-          <ActivityIndicator color='gray' size={36} />
+          <ActivityIndicator color='gray' size={40} />
       </View>
     )
 

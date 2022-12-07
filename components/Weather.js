@@ -44,19 +44,19 @@ export default function Weather({ weatherData, fetchWeatherData }) {
                 <View style={{alignItems: 'center'}}>
                     <Text style={{ ...styles.headerText, color: textColor, fontWeight: 'bold', fontSize: 46}}>{name}</Text>
                     <Text style={{ ...styles.headerText, color: textColor, fontWeight: 'bold'}}>{main}</Text>
-                    <Text style={{ ...styles.headerText, color: textColor, }}>{temp} °C</Text>
+                    <Text style={{ ...styles.headerText, color: textColor, fontWeight: 'bold' }}>{Math.round(temp)} °C</Text>
                 </View>
 
                 <View style={styles.extraInfo}>
 
                     <View styles={styles.info}>
-                        <Text style={{fontSize: 22, color: 'white'}}>Humidity</Text>
-                        <Text style={{fontSize: 22, color: 'white'}}>{humidity} %</Text>
+                        <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Humidity</Text>
+                        <Text style={{fontSize: 22, color: textColor, textAlign: 'center', fontWeight: 'bold'}}>{humidity} %</Text>
                     </View>
 
                     <View styles={styles.info}>
-                        <Text style={{fontSize: 22, color: 'white'}}>Wind Speed</Text>
-                        <Text style={{fontSize: 22, color: 'white'}}>{speed} m/s</Text>
+                        <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Wind Speed</Text>
+                        <Text style={{fontSize: 22, color: textColor, textAlign: 'center', fontWeight: 'bold'}}>{speed} m/s</Text>
                     </View>
 
                 </View>
@@ -77,20 +77,13 @@ const styles = StyleSheet.create({
     },
     headerText: {
         fontSize: 36,
-        marginTop: 10,
+        marginTop: 30,
     },
     extraInfo: {
         flexDirection: 'row',
         merginTop: 20,
         justifyContent: 'space-between',
-        padding: 10
-    },
-    info: {
-        width: Dimensions.get('screen').width/2.5,
-        backgroundColor: 'rgba(0,0,0, 0.5',
-        padding: 10,
-        borderRadius: 15,
-        justifyContent: 'center'
+        padding: 40
     }
 
   });
