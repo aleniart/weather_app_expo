@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import Weather from './components/Weather';
 import SearchBar from './components/SearchBar';
 
-const API_KEY = "1785ba90a60adfeddf345a9a00ef8142";
+const API_KEY = "";
 
 export default function App() {
 
