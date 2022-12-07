@@ -5,7 +5,6 @@ import Weather from './components/Weather';
 import SearchBar from './components/SearchBar';
 
 const API_KEY = "1785ba90a60adfeddf345a9a00ef8142";
-// const API = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
 
 export default function App() {
 
