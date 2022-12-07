@@ -9,8 +9,9 @@ export default function Weather({ weatherData, fetchWeatherData }) {
 
     const { weather,
             name,
-            main: {temp, humidity},
-            wind: {speed}
+            main: {temp, humidity, pressure},
+            wind: {speed},
+            clouds: {all}
     } = weatherData;
     const [{ main }] = weather;
 
@@ -50,6 +51,20 @@ export default function Weather({ weatherData, fetchWeatherData }) {
                 <View style={styles.extraInfo}>
 
                     <View styles={styles.info}>
+                        <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Pressure</Text>
+                        <Text style={{fontSize: 22, color: textColor, textAlign: 'center', fontWeight: 'bold'}}>{pressure} hPa</Text>
+                    </View>
+
+                    <View styles={styles.info}>
+                        <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Clouds</Text>
+                        <Text style={{fontSize: 22, color: textColor, textAlign: 'center', fontWeight: 'bold'}}>{clouds} %</Text> 
+                    </View>
+
+                </View>
+
+                <View style={styles.extraInfoBot}>
+
+                    <View styles={styles.info}>
                         <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Humidity</Text>
                         <Text style={{fontSize: 22, color: textColor, textAlign: 'center', fontWeight: 'bold'}}>{humidity} %</Text>
                     </View>
@@ -83,7 +98,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         merginTop: 20,
         justifyContent: 'space-between',
-        padding: 40
+        padding: 40,
+        marginRight: 25,
+    },
+    extraInfoBot: {
+        flexDirection: 'row',
+        merginTop: 20,
+        justifyContent: 'space-between',
+        padding: 40,
     }
 
   });
