@@ -14,7 +14,7 @@ The application is based on React Native with the help of Expo.
     <img src="assets/screenshots/example4.jpg" width="150">
 </p>
 
-## **TECHNOLOGIS USED**
+## **TECHNOLOGIES USED**
 More about the technologies used below:
 * [React Native](https://reactnative.dev)
 * [Expo CLI](https://expo.dev)
