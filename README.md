@@ -6,11 +6,13 @@
 The application is based on React Native with the help of Expo.
 
 ## **THE UI**
-<img src="assets/screenshots/example.jpg" width="150">
-<img src="assets/screenshots/example1.jpg" width="150">
-<img src="assets/screenshots/example2.jpg" width="150">
-<img src="assets/screenshots/example3.jpg" width="150">
-<img src="assets/screenshots/example4.jpg" width="150">
+<p float="left">
+    <img src="assets/screenshots/example.jpg" width="150">
+    <img src="assets/screenshots/example1.jpg" width="150">
+    <img src="assets/screenshots/example2.jpg" width="150">
+    <img src="assets/screenshots/example3.jpg" width="150">
+    <img src="assets/screenshots/example4.jpg" width="150">
+</p>
 
 ## **TECHNOLOGIS AND FRAMEWORK USED**
 More about the technologies used below:
@@ -28,9 +30,9 @@ The API used was OpenWeather API <- linkowanie based on a free plan containing c
 * Copy the repo and open it in choosen editor (e.g. VS Code).
 
 **Step 2:**
-* Go to https://openweathermap.org/ to get an API key (registration required).
+* Go to <https://openweathermap.org/> to get an API key (registration required).
 * Paste your key in the 7th line of App.js: 
-*`const API_KEY = "YourAPIKey";`*
+`const API_KEY = "YourAPIKey";`
 
 **Step 3:**
 * Type in new terminal `npm start`.
