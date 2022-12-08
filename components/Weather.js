@@ -98,8 +98,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         merginTop: 20,
         justifyContent: 'space-between',
-        padding: 40,
-        marginRight: 25,
+        padding: 40
     },
     extraInfoBot: {
         flexDirection: 'row',
