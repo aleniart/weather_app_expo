@@ -56,7 +56,7 @@ export default function Weather({ weatherData, fetchWeatherData }) {
                     </View>
 
                     <View styles={styles.info}>
-                        <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Clouds</Text>
+                        <Text style={{fontSize: 22, color: textColor, fontWeight: 'bold'}}>Cloudiness</Text>
                         <Text style={{fontSize: 22, color: textColor, textAlign: 'center', fontWeight: 'bold'}}>{clouds} %</Text> 
                     </View>
 
