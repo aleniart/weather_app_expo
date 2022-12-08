@@ -14,14 +14,14 @@ The application is based on React Native with the help of Expo.
     <img src="assets/screenshots/example4.jpg" width="150">
 </p>
 
-## **TECHNOLOGIS AND FRAMEWORK USED**
+## **TECHNOLOGIS USED**
 More about the technologies used below:
 * [React Native](https://reactnative.dev)
 * [Expo CLI](https://expo.dev)
 * [Node.js (v. 16.18.1)](https://nodejs.org/en/)
 
 ## **API USED**
-The API used was OpenWeather API <- linkowanie based on a free plan containing current weather data.
+The API used was [OpenWeather API](https://openweathermap.org) based on a free plan containing current weather data.
 
 ## **HOW TO RUN THE APP**
 **Step 1:**
